@@ -63,7 +63,7 @@ SetupDirectories
 $helper = "c:\k\helper.psm1"
 if (!(Test-Path $helper))
 {
-    DownloadFile -Url https://raw.githubusercontent.com/Microsoft/SDN/master/Kubernetes/windows/helper.psm1 -Destination C:\k\helper.psm1
+    DownloadFile -Url https://raw.githubusercontent.com/papagalu/custom-flannel-startscript/master/helper.psm1 -Destination C:\k\helper.psm1
 }
 ipmo $helper
 
