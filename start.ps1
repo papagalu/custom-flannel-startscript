@@ -8,6 +8,8 @@
     [ValidateSet("process", "hyperv")] $IsolationType = "process"
 )
 
+$ErrorActionPreference = "Stop";
+
 function SetupDirectories()
 {
     md $BaseDir -ErrorAction Ignore
