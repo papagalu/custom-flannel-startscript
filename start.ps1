@@ -8,7 +8,10 @@
     [ValidateSet("process", "hyperv")] $IsolationType = "process"
 )
 
-$ErrorActionPreference = "Stop";
+$ErrorActionPreference = "Stop"
+
+$LogDir = "C:\k"
+$BaseDir = "C:\k"
 
 # Prepare POD infra Images
 start powershell $BaseDir\InstallImages.ps1
