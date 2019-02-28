@@ -54,7 +54,7 @@ SetupDirectories
 $helper = "C:\k\helper.psm1"
 if (!(Test-Path $helper))
 {
-     curl.exe https://raw.githubusercontent.com/papagalu/custom-flannel-startscript/master/helper.psm1 --output C:\k\helper.psm1
+     curl.exe -L https://raw.githubusercontent.com/papagalu/custom-flannel-startscript/master/helper.psm1 --output C:\k\helper.psm1
 }
 ipmo $helper
 

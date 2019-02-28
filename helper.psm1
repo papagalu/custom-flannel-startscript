@@ -57,7 +57,7 @@ function DownloadFile()
     }
 
     try {
-        curl.exe $Url --output $Destination
+        curl.exe -L $Url --output $Destination
         Write-Host "Downloaded $Url=>$Destination"
     } catch {
         Write-Error "Failed to download $Url"
